@@ -1,0 +1,69 @@
+@font-face {
+    font-family: "Sofia Sans Condensed";
+    src: url('https://fonts.gstatic.com/s/sofiasanscondensed/v1/HI_KiYs3Icvp68482N-LdkaId3mTV60v4_gq-w.woff2') format('woff2');
+    font-weight: 100 1000;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Inter";
+    src: url('https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_fvQtMwCp50KnMw2boKODKl.woff2') format('woff2');
+
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "IBM Plex Mono";
+    src: url('https://fonts.gstatic.com/s/ibmplexmono/v19/-F63fjptAgt5VM-kVkqdyU8n1iIq129k.woff2') format('woff2');
+    font-weight: 400 700;
+    font-display: swap;
+}
+
+* {
+    font-family: var(--text-font);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* Backgrounds */
+    --background-primary-color: #F1E7CF;
+    --background-secondary-color: #021C35;
+    --background-tertiary-color: #FDBF06;
+    --background-quaternary-color: #FFFFFF;
+
+    /* Text Colors */
+    --text-primary-color: #000000;
+    --text-secondary-color: #6C685D;
+    --text-tertiary-color: #FFFFFF;
+
+    /* Brand/Action Colors */
+    --color-primary: #E62429;
+    --color-secondary: #021C35;
+    --color-tertiary: #FDBF06;
+
+    /* Title Sizes */
+    --title-h1-size: 64px;
+    --title-h2-size: 54.04px;
+    --title-h3-size: 43.42px;
+    --title-h4-size: 32px;
+    --subtitle-size: 24px;
+
+    --text-body1-size: 16px;
+    --text-body2-size: 20px;
+    --text-body3-size: 24px;
+
+    /* Font Weights */
+    --title-weight: 900;
+    --subtitle-weight: 800;
+    --header-weight: 700;
+    --text-body1-weight: 600;
+    --text-body2-weight: 500;
+    --text-weight: normal;
+
+    /* Font Families */
+    --title-font: "Sofia Sans Condensed", sans-serif;
+    --text-font: "Inter", sans-serif;
+    --mono-font: "IBM Plex Mono", monospace;
+}
