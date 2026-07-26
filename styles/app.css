@@ -1,3 +1,5 @@
+@import "header.css";
+
 @font-face {
     font-family: "Sofia Sans Condensed";
     src: url('https://fonts.gstatic.com/s/sofiasanscondensed/v1/HI_KiYs3Icvp68482N-LdkaId3mTV60v4_gq-w.woff2') format('woff2');
@@ -8,7 +10,6 @@
 @font-face {
     font-family: "Inter";
     src: url('https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_fvQtMwCp50KnMw2boKODKl.woff2') format('woff2');
-
     font-display: swap;
 }
 
@@ -17,13 +18,6 @@
     src: url('https://fonts.gstatic.com/s/ibmplexmono/v19/-F63fjptAgt5VM-kVkqdyU8n1iIq129k.woff2') format('woff2');
     font-weight: 400 700;
     font-display: swap;
-}
-
-* {
-    font-family: var(--text-font);
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
 }
 
 :root {
@@ -66,4 +60,11 @@
     --title-font: "Sofia Sans Condensed", sans-serif;
     --text-font: "Inter", sans-serif;
     --mono-font: "IBM Plex Mono", monospace;
+}
+
+/* O seletor universal fica aqui abaixo, pois já reconhece as variáveis acima */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
