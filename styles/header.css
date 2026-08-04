@@ -86,3 +86,10 @@ header {
 .header__navbar a.active::after {
     width: 100%;
 }
+
+#menu-checkbox,
+#overlay,
+.menu-label{
+    display: none;
+    width: 0;
+}

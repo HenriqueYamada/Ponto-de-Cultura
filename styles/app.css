@@ -1,4 +1,5 @@
 @import "header.css";
+@import "media_query.css";
 
 @font-face {
     font-family: "Sofia Sans Condensed";

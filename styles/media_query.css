@@ -1,0 +1,46 @@
+@media (max-width: 768px){
+    .menu-label{
+        display: flex;
+        width: max-content;
+        transition: 200ms ease;
+        cursor: pointer;
+    }
+
+    .menu-label:hover{
+        scale: 1.1;
+    }
+
+    .header__navbar{
+        flex-flow: column nowrap;
+        position: fixed;
+        top: 0;
+        right: -100%;
+
+        background-color: #0F1016;
+        padding: 30px;
+        height: 100%;
+        width: 60%;
+        z-index: 10;
+        transition: 500ms ease;
+    }
+
+    #menu-checkbox:checked ~ ul{
+        right: 0%;
+    }
+
+    #menu-checkbox:checked ~ #overlay{
+        display: flex;
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        z-index: 9;
+    }
+
+    .menu-label > img{
+        color: white;
+        height: 20px;
+        width: 20px;
+    }
+}
