@@ -3,51 +3,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ponto de cultura</title>
+    <title>Ponto de Cultura</title>
     <link rel="stylesheet" href="../styles/app.css">
     <link rel="shortcut icon" href="../assets/icons/Ponto-de-cultura_logo.webp" type="image/x-icon">
 </head>
 <body>
     <header>
-        <div class="header-container">
-            <div class="header__logo">
-                <img src="../assets/icons/Ponto-de-cultura_logo.webp" alt="">
-                <div class="logo-content">
-                    <span>PONTO DE CULTURA</span>
-                    <span>SALÃO CULTURAL</span>
+        <nav>
+            <div class="header-container">
+                <div class="header__logo">
+                    <img src="../assets/icons/Ponto-de-cultura_logo.webp" alt="Logo do Ponto de Cultura Salão Cultural">
+
+                    <div class="logo-content">
+                        <span>PONTO DE CULTURA</span>
+                        <span>SALÃO CULTURAL</span>
+                    </div>
                 </div>
-            </div>
 
-            <input type="checkbox" id="menu-checkbox">
-            <label class="menu-label" for="menu-checkbox">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
-                    <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
-                    </svg>
-            </label>
-
-            <label id="overlay" for="menu-checkbox"></label>
-
-            <ul class="header__navbar">
+                <input type="checkbox" id="menu-checkbox">
                 <label class="menu-label" for="menu-checkbox">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
-                        <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"/>
-                        </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                        viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
+                    </svg>
                 </label>
 
-                <li><a href="index.html" class="active">HOME</a></li>
-                <li><a href="enterprise.html">EMPRESA</a></li>
-                <li><a href="galery.html">GALERIA</a></li>
-                <li><a href="contact.html">CONTATO</a></li>
-            </ul>
-        </div>
+                <label id="overlay" for="menu-checkbox"></label>
+
+                <ul class="header__navbar">
+                    <label class="menu-label" for="menu-checkbox">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                            viewBox="0 0 16 16">
+                            <path
+                                d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z" />
+                        </svg>
+                    </label>
+
+                    <li><a href="index.html" class="active">HOME</a></li>
+                    <li><a href="enterprise.html">EMPRESA</a></li>
+                    <li><a href="galery.html">GALERIA</a></li>
+                    <li><a href="contact.html">CONTATO</a></li>
+                </ul>
+            </div>
+        </nav>
     </header>
 
     <main>
+        <section class="hero">
+            <img class="hero-bird" src="../assets/images/Pardal_hero.webp" alt="Pardal pousado">
 
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    Ponto de Cultura<br>
+                    <span class="hero-title-highlight">Salão Cultural</span>
+                </h1>
+
+                <p class="hero-text">
+                    Um espaço de encontro, expressão e transformação através da arte, da cultura e da comunidade
+                </p>
+
+                <a href="#salao" class="hero-button">
+                    ENTRE NO SALÃO
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M12 22s7-7.58 7-13a7 7 0 1 0-14 0c0 5.42 7 13 7 13Z" />
+                        <circle cx="12" cy="9" r="2.5" />
+                    </svg>
+                </a>
+            </div>
+
+            <img class="hero-hand" src="../assets/images/Imagem_hero.png" alt="Elementos culturais do Salão Cultural">
+        </section>
     </main>
 
     <footer>
 
     </footer>
+
 </body>
 </html>
