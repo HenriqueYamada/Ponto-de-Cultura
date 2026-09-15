@@ -1,0 +1,106 @@
+.history{
+    display: flex;
+    gap: 120px;
+    align-items: center;
+    justify-content: center;
+    padding: 60px;
+}
+
+/* ---------- Eyebrown ---------- */
+
+.eyebrown {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--color-primary);
+    font-family: var(--text-font);
+    font-size: .78rem;
+    font-weight: 600;
+    letter-spacing: .13em;
+    text-transform: uppercase;
+}
+
+.eyebrown::before {
+    content: "";
+    width: 34px;
+    height: 3px;
+    background: currentColor;
+}
+
+/* ---------- History container ---------- */
+
+.history__container{
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    width: 50%;
+}
+
+.history__content h1{
+    font-family: var(--title-font);
+    font-size: var(--title-h1-size);
+    font-weight: 700;
+    color: var(--color-secondary);
+    margin-bottom: 12px;
+    max-width: 540px;
+    line-height: .96;
+    letter-spacing: -.02em;
+}
+
+.history__content h1 span {
+    color: var(--color-primary);
+}
+
+.history__content__text {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: var(--text-font);
+    line-height: 1.75em;
+    color: var(--text-secondary-color);
+}
+
+.history__content__text p {
+    font-family: var(--text-font);
+}
+
+/* ---------- Button ---------- */
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+    color: var(--color-primary);
+    font-family: var(--text-font);
+    font-size: .82rem;
+    font-weight: 600;
+    text-decoration: none;
+    letter-spacing: .07em;
+    text-transform: uppercase;
+    width: max-content;
+    transition: 250ms;
+    cursor: pointer;
+}
+
+.btn:hover {
+    color: var(--color-primary-hover);
+}
+
+.btn::after {
+    content: "→";
+    transition: transform 0.2s;
+    transition: 150ms;
+}
+
+.btn:hover::after {
+    margin-left: 8px;
+}
+
+/* ---------- Image ---------- */
+
+.history__image {
+    width: 100%;
+    max-width: 640px;
+    height: 100%;
+    max-height: 360px;
+}
