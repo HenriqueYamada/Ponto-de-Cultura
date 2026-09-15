@@ -1,10 +1,6 @@
 @media (max-width: 1200px) {
     /* ---------- Hero ---------- */
 
-    .hero {
-        padding: 60px 40px;
-    }
-
     .hero-bird {
         left: 20px;
         width: 200px;
@@ -15,10 +11,6 @@
     .hero-content {
         max-width: 400px;
         margin-right: 240px;
-    }
-
-    .hero-title {
-        font-size: var(--title-h3-size);
     }
 
     .hero-hand {
@@ -65,6 +57,10 @@
         max-width: 400px;
     }
 
+    .hero-title {
+        font-size: var(--title-h3-size);
+    }
+
     .hero-hand {
         position: relative;
         top: auto;
@@ -97,6 +93,7 @@
         right: auto;
         transform: none;
         width: 300px;
+        min-width: 0;
         max-width: 42%;
         flex-shrink: 0;
     }
