@@ -1,10 +1,5 @@
 @media (max-width: 1200px) {
     /* ---------- Hero ---------- */
-
-    .hero {
-        padding: 60px 40px;
-    }
-
     .hero-bird {
         left: 20px;
         width: 200px;
@@ -17,13 +12,15 @@
         margin-right: 240px;
     }
 
-    .hero-title {
-        font-size: var(--title-h3-size);
-    }
-
     .hero-hand {
         width: 360px;
         right: 30px;
+    }
+
+    /* ---------- History ---------- */
+    .history {
+        flex-direction: column;
+        gap: 60px;
     }
 }
 
@@ -53,7 +50,7 @@
 
     .hero {
         justify-content: space-between;
-        padding: 60px 40px;
+        padding: 60px 40px 0;
     }
 
     .hero-bird {
@@ -65,6 +62,10 @@
         max-width: 400px;
     }
 
+    .hero-title {
+        font-size: var(--title-h3-size);
+    }
+
     .hero-hand {
         position: relative;
         top: auto;
@@ -72,6 +73,15 @@
         transform: none;
         width: 330px;
         flex-shrink: 0;
+    }
+
+    /* ---------- History ---------- */
+    .history {
+        padding: 60px 24px;
+    }
+
+    .history h1{
+        font-size: var(--title-h3-size);
     }
 }
 
@@ -81,7 +91,7 @@
 
     .hero {
         justify-content: space-between;
-        padding: 60px 30px;
+        padding: 60px 30px 0;
         gap: 30px;
     }
 
@@ -97,8 +107,15 @@
         right: auto;
         transform: none;
         width: 300px;
+        min-width: 0;
         max-width: 42%;
         flex-shrink: 0;
+    }
+
+    /* ---------- History ---------- */
+
+    .history__container{
+        width: 75%;
     }
 }
 
@@ -158,7 +175,7 @@
         text-align: center;
         gap: 45px;
         min-height: auto;
-        padding: 60px 24px 50px;
+        padding: 120px 24px 50px;
     }
 
     .hero-content {
@@ -183,6 +200,15 @@
         max-width: 420px;
         height: auto;
     }
+
+    /* ---------- History ---------- */
+    .history {
+        padding: 60px 12px;
+    }
+
+    .history__image {
+        padding: 0 24px;
+    }
 }
 
 @media (max-width: 480px) {
@@ -205,7 +231,7 @@
     /* ---------- Hero ---------- */
 
     .hero {
-        padding: 50px 16px 40px;
+        padding: 100px 16px 40px;
         gap: 35px;
     }
 
@@ -225,5 +251,10 @@
     .hero-hand {
         width: 90%;
         max-width: 320px;
+    }
+
+    /* ---------- History ---------- */
+    .history__image {
+        padding: 0 12px;
     }
 }

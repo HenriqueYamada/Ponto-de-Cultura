@@ -1,3 +1,11 @@
+@media (min-width: 1900px) {
+    /* ---------- Hero ---------- */
+
+    .hero-hand {
+        right: calc(50% - 620px);
+    }
+
+}
 
 .hero {
     position: relative;
@@ -8,7 +16,7 @@
     width: 100%;
     min-height: 500px;
     margin: auto;
-    padding: 70px 60px;
+    padding: 180px 60px 70px;
     overflow: hidden;
 }
 
@@ -91,12 +99,11 @@
 
 .hero-hand {
     position: absolute;
-    top: 50%;
-    right: max(40px, calc((100vw - 1440px) / 2));
+    top: 57.5%;
+    right: 15%;
     transform: translateY(-50%);
-    width: min(35vw, 520px);
+    width: 23%;
+    min-width: 360px;
+    max-width: 440px;
     height: auto;
-    object-fit: contain;
-    z-index: 2;
-    pointer-events: none;
 }
