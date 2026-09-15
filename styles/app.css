@@ -4,6 +4,7 @@
 @import "home/hero.css";
 @import "home/history.css";
 @import "home/stats.css";
+@import "home/activities.css";
 @import "media_query.css";
 
 :root {
@@ -57,9 +58,17 @@
     box-sizing: border-box;
 }
 
+body {
+    background-color: var(--background-primary-color);
+}
+
 h1,
 h2,
 h3,
 h4 {
     font-family: var(--title-font);
+}
+
+p {
+    font-family: var(--text-font);
 }
