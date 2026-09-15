@@ -50,6 +50,9 @@
     --title-font: "Sofia Sans Condensed", sans-serif;
     --text-font: "Inter", sans-serif;
     --mono-font: "IBM Plex Mono", monospace;
+
+    /* Shadow */
+    --shadow: 0 20px 40px rgba(0, 0, 255, 0.3);
 }
 
 * {
@@ -70,5 +73,6 @@ h4 {
 }
 
 p {
+    color: var(--text-secondary-color);
     font-family: var(--text-font);
 }
