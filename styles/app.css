@@ -3,6 +3,7 @@
 @import "header.css";
 @import "home/hero.css";
 @import "home/history.css";
+@import "home/stats.css";
 @import "media_query.css";
 
 :root {
@@ -15,7 +16,8 @@
     /* Text Colors */
     --text-primary-color: #000000;
     --text-secondary-color: #6C685D;
-    --text-tertiary-color: #FFFFFF;
+    --text-tertiary-color: #FFFFFFB8;
+    --text-quaternary-color: #FFFFFF;
 
     /* Brand/Action Colors */
     --color-primary: #E62429;
