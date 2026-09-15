@@ -1,10 +1,15 @@
+
 header {
     background-color: var(--background-secondary-color);
     width: 100%;
-    position: fixed;
+    position: sticky;
     top: 0;
     left: 0;
-    z-index: 100;
+    z-index: 1000;
+}
+
+header nav {
+    width: 100%;
 }
 
 .header-container {
@@ -14,12 +19,12 @@ header {
     gap: 40px;
     color: white;
     margin: auto;
-    padding: 16px;
+    padding: 16px 24px;
     width: 100%;
     max-width: 1024px;
 }
 
-.header__logo{
+.header__logo {
     display: flex;
     gap: 8px;
     align-items: center;
@@ -28,41 +33,42 @@ header {
 .header__logo img {
     height: 40px;
     width: 40px;
+    object-fit: contain;
 }
 
-.logo-content{
+.logo-content {
     display: flex;
     flex-direction: column;
     gap: 4px;
     color: var(--background-tertiary-color);
     font-family: var(--title-font);
     font-size: 12px;
+    font-weight: 700;
 }
 
 .logo-content > :first-child {
     color: white;
 }
 
-.header__navbar{
+.header__navbar {
     display: flex;
     align-items: center;
     gap: 40px;
     font-family: var(--mono-font);
-    height: 100%;
     list-style-type: none;
 }
 
-.header__navbar a{
+.header__navbar a {
     position: relative;
     color: var(--text-tertiary-color);
     text-decoration: none;
     transition: 300ms ease;
 }
 
-.header__navbar a::after{
-    content: ' ';
+.header__navbar a::after {
+    content: '';
     position: absolute;
-    top: 20px;
+    bottom: -6px;
     left: 0;
     background-color: var(--background-tertiary-color);
     height: 2px;
@@ -74,8 +80,7 @@ header {
     color: var(--color-tertiary);
 }
 
-.header__navbar a:hover::after{
-    right: 0;
+.header__navbar a:hover::after {
     width: 100%;
 }
 
@@ -85,4 +90,14 @@ header {
 
 .header__navbar a.active::after {
     width: 100%;
+}
+
+#menu-checkbox,
+#overlay,
+.menu-label {
+    display: none;
+}
+
+#menu-checkbox {
+    position: absolute;
 }

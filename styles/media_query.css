@@ -1,0 +1,229 @@
+@media (max-width: 1200px) {
+    /* ---------- Hero ---------- */
+
+    .hero {
+        padding: 60px 40px;
+    }
+
+    .hero-bird {
+        left: 20px;
+        width: 200px;
+        height: 440px;
+        bottom: -135px;
+    }
+
+    .hero-content {
+        max-width: 400px;
+        margin-right: 240px;
+    }
+
+    .hero-title {
+        font-size: var(--title-h3-size);
+    }
+
+    .hero-hand {
+        width: 360px;
+        right: 30px;
+    }
+}
+
+@media (max-width: 1100px) {
+
+    .hero-bird {
+        display: none;
+    }
+
+    .hero {
+        justify-content: center;
+    }
+
+    .hero-content {
+        margin-left: 0;
+        margin-right: 360px;
+    }
+
+    .hero-hand {
+        width: 340px;
+        right: 30px;
+    }
+}
+
+@media (max-width: 1024px) {
+    /* ---------- Hero ---------- */
+
+    .hero {
+        justify-content: space-between;
+        padding: 60px 40px;
+    }
+
+    .hero-bird {
+        display: none;
+    }
+
+    .hero-content {
+        margin: 0;
+        max-width: 400px;
+    }
+
+    .hero-hand {
+        position: relative;
+        top: auto;
+        right: auto;
+        transform: none;
+        width: 330px;
+        flex-shrink: 0;
+    }
+}
+
+@media screen and (max-width: 850px) {
+
+    /* ---------- Hero ---------- */
+
+    .hero {
+        justify-content: space-between;
+        padding: 60px 30px;
+        gap: 30px;
+    }
+
+    .hero-content {
+        margin: 0;
+        max-width: 360px;
+        width: 100%;
+    }
+
+    .hero-hand {
+        position: relative;
+        top: auto;
+        right: auto;
+        transform: none;
+        width: 300px;
+        max-width: 42%;
+        flex-shrink: 0;
+    }
+}
+
+@media (max-width: 768px) {
+
+    /* ---------- Navbar ---------- */
+
+    .menu-label {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: max-content;
+        color: white;
+        cursor: pointer;
+        transition: 200ms ease;
+    }
+
+    .menu-label:hover {
+        transform: scale(1.1);
+    }
+
+    .header__navbar {
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: flex-start;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        background-color: #0F1016;
+        padding: 30px;
+        gap: 32px;
+        height: 100vh;
+        width: min(320px, 75%);
+        z-index: 1001;
+        transition: 500ms ease;
+    }
+
+    #menu-checkbox:checked ~ .header__navbar {
+        right: 0;
+    }
+
+    #menu-checkbox:checked ~ #overlay {
+        display: block;
+        position: fixed;
+        inset: 0;
+        background-color: rgba(0, 0, 0, 0.5);
+        height: 100vh;
+        width: 100%;
+        z-index: 1000;
+    }
+
+    /* ---------- Hero ---------- */
+
+    .hero {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        gap: 45px;
+        min-height: auto;
+        padding: 60px 24px 50px;
+    }
+
+    .hero-content {
+        order: 1;
+        margin: 0;
+        max-width: 500px;
+        width: 100%;
+    }
+
+    .hero-button {
+        margin: 0 auto;
+    }
+
+    .hero-hand {
+        position: relative;
+        top: auto;
+        right: auto;
+        transform: none;
+        order: 2;
+        margin: 0 auto;
+        width: 70%;
+        max-width: 420px;
+        height: auto;
+    }
+}
+
+@media (max-width: 480px) {
+
+    /* ---------- Navbar ---------- */
+
+    .header-container {
+        padding: 12px 16px;
+    }
+
+    .header__logo img {
+        height: 34px;
+        width: 34px;
+    }
+
+    .logo-content {
+        font-size: 10px;
+    }
+
+    /* ---------- Hero ---------- */
+
+    .hero {
+        padding: 50px 16px 40px;
+        gap: 35px;
+    }
+
+    .hero-title {
+        font-size: var(--title-h4-size);
+    }
+
+    .hero-text {
+        font-size: var(--text-body1-size);
+    }
+
+    .hero-button {
+        width: auto;
+        max-width: 100%;
+    }
+
+    .hero-hand {
+        width: 90%;
+        max-width: 320px;
+    }
+}

@@ -1,4 +1,7 @@
+
 @import "header.css";
+@import "hero.css";
+@import "media_query.css";
 
 @font-face {
     font-family: "Sofia Sans Condensed";
@@ -34,6 +37,7 @@
 
     /* Brand/Action Colors */
     --color-primary: #E62429;
+    --color-primary-hover: #b41f24;
     --color-secondary: #021C35;
     --color-tertiary: #FDBF06;
 
@@ -62,7 +66,6 @@
     --mono-font: "IBM Plex Mono", monospace;
 }
 
-/* O seletor universal fica aqui abaixo, pois já reconhece as variáveis acima */
 * {
     margin: 0;
     padding: 0;
