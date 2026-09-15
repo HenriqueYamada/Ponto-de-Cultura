@@ -4,6 +4,7 @@
 @import "home/hero.css";
 @import "home/history.css";
 @import "home/stats.css";
+@import "home/activities.css";
 @import "media_query.css";
 
 :root {
@@ -49,6 +50,9 @@
     --title-font: "Sofia Sans Condensed", sans-serif;
     --text-font: "Inter", sans-serif;
     --mono-font: "IBM Plex Mono", monospace;
+
+    /* Shadow */
+    --shadow: 0 20px 40px rgba(0, 0, 255, 0.3);
 }
 
 * {
@@ -57,9 +61,18 @@
     box-sizing: border-box;
 }
 
+body {
+    background-color: var(--background-primary-color);
+}
+
 h1,
 h2,
 h3,
 h4 {
     font-family: var(--title-font);
+}
+
+p {
+    color: var(--text-secondary-color);
+    font-family: var(--text-font);
 }

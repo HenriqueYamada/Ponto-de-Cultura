@@ -3,7 +3,7 @@
     gap: 120px;
     align-items: center;
     justify-content: center;
-    padding: 60px;
+    padding: 60px 120px;
 }
 
 /* ---------- Eyebrown ---------- */
@@ -34,9 +34,10 @@
     flex-direction: column;
     gap: 32px;
     width: 50%;
+    max-width: 720px;
 }
 
-.history__content h1{
+.title_content{
     font-family: var(--title-font);
     font-size: var(--title-h1-size);
     font-weight: 700;
@@ -47,7 +48,7 @@
     letter-spacing: -.02em;
 }
 
-.history__content h1 span {
+.title_content span {
     color: var(--color-primary);
 }
 
