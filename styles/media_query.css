@@ -22,6 +22,11 @@
         flex-direction: column;
         gap: 60px;
     }
+
+    /* ---------- Activities ---------- */
+    .activities {
+        padding: 60px 60px;
+    }
 }
 
 @media (max-width: 1100px) {
@@ -88,6 +93,18 @@
 
     .stats-container {
         padding: 48px 60px;
+    }
+
+    /* ---------- Activities ---------- */
+
+    .images {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 24px;
+    }
+
+    .image {
+        aspect-ratio: 1 / 1; 
+        padding: 20px;
     }
 }
 
@@ -234,6 +251,31 @@
     .history__image {
         padding: 0 24px;
     }
+
+    /* ---------- Activities ---------- */
+
+    .activities {
+        padding: 60px 24px;
+        margin-bottom: 80px;
+    }
+
+    .images {
+        gap: 20px;
+    }
+
+    .image {
+        padding: 18px;
+        border-radius: 16px;
+    }
+
+    .image h3 {
+        font-size: 22px;
+        margin-bottom: 8px;
+    }
+
+    .image p {
+        font-size: 14px;
+    }
 }
 
 @media (max-width: 480px) {
@@ -281,5 +323,33 @@
     /* ---------- History ---------- */
     .history__image {
         padding: 0 12px;
+    }
+
+    /* ---------- Activities ---------- */
+
+    .activities {
+        padding: 40px 16px;
+        margin-bottom: 60px;
+    }
+
+    .images {
+        grid-template-columns: 1fr; 
+        gap: 16px;
+    }
+
+    .image {
+        aspect-ratio: 4 / 3; 
+        padding: 18px;
+        border-radius: 14px;
+    }
+
+    .image h3 {
+        font-size: 20px;
+        margin-bottom: 6px;
+    }
+
+    .image p {
+        font-size: 13px;
+        line-height: 1.4;
     }
 }

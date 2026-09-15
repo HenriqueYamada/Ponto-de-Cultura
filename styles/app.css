@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;700&family=Inter:wght@400;500;600;700&family=Sofia+Sans+Condensed:wght@100..1000&display=swap');
 
-@import "header.css";
+@import "home/header.css";
 @import "home/hero.css";
 @import "home/history.css";
 @import "home/stats.css";

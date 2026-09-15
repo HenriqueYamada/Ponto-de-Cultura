@@ -8,11 +8,16 @@
     width: 100%;
 }
 
+.activities-content {
+    margin-bottom: 48px;
+}
+
 .images {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
     gap: 40px;
     margin: 24px 0;
+    width: 100%;
 }
 
 .image {
@@ -26,8 +31,8 @@
     border-radius: 20px;
     overflow: hidden;
     padding: 24px;
-    width: 280px;
-    height: 500px;
+    width: 100%;
+    aspect-ratio: 280 / 500; 
     transition: 250ms;
 }
 
