@@ -83,6 +83,12 @@
     .history h1{
         font-size: var(--title-h3-size);
     }
+
+    /* ---------- Stats ---------- */
+
+    .stats-container {
+        padding: 48px 60px;
+    }
 }
 
 @media screen and (max-width: 850px) {
@@ -116,6 +122,25 @@
 
     .history__container{
         width: 75%;
+    }
+
+    /* ---------- Stats ---------- */
+
+    .stats-container {
+        flex-direction: column;
+        align-items: start;
+        gap: 0;
+    }
+
+    .title {
+        padding-bottom: 12px;
+    }
+
+    .metric {
+        border-left: 0;
+        border-top: 1px solid rgba(255, 255, 255, 0.25);
+        padding: 0;
+        width: 100%;
     }
 }
 
