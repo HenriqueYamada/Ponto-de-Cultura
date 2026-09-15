@@ -28,6 +28,11 @@
     padding: 24px;
     width: 280px;
     height: 500px;
+    transition: 250ms;
+}
+
+.image:hover {
+    scale: 1.05;
 }
 
 .image::before {
