@@ -18,6 +18,7 @@
     font-weight: 600;
     letter-spacing: .13em;
     text-transform: uppercase;
+    margin-bottom: 18px;
 }
 
 .eyebrown::before {

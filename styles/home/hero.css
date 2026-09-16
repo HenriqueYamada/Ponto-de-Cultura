@@ -1,26 +1,33 @@
+@media (min-width: 1900px) {
+    /* ---------- Hero ---------- */
+
+    .hero-hand {
+        right: calc(50% - 620px);
+    }
+
+}
+
 .hero {
     position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-wrap: nowrap; /* a troca pra coluna é feita SÓ pelo breakpoint de 768px, nunca automaticamente */
-    gap: clamp(40px, 6vw, 140px);
     background-color: var(--background-secondary-color);
     width: 100%;
     min-height: 500px;
     margin: auto;
-    padding: clamp(110px, 15vw, 180px) 60px 70px;
+    padding: 180px 60px 70px;
     overflow: hidden;
 }
 
-/* ---------- Imagem Esquerda (decorativa, continua absoluta) ---------- */
+/* ---------- Imagem Esquerda ---------- */
 
 .hero-bird {
     position: absolute;
     left: max(20px, calc((100vw - 1440px) / 2));
     bottom: -150px;
-    width: clamp(160px, 14vw, 250px);
-    height: clamp(340px, 30vw, 500px);
+    height: 500px;
+    width: 250px;
     object-fit: contain;
     z-index: 1;
     pointer-events: none;
@@ -31,15 +38,15 @@
 .hero-content {
     position: relative;
     z-index: 3;
-    flex: 1 1 320px;
-    min-width: 260px; /* trava de segurança: nunca encolhe além disso antes de empilhar em 768px */
+    width: 100%;
     max-width: 420px;
+    margin-right: 240px;
 }
 
 .hero-title {
     font-family: var(--title-font);
     font-weight: var(--title-weight);
-    font-size: clamp(32px, 4vw, 56px); /* 56px = var(--title-h2-size); escala em vez de pular */
+    font-size: var(--title-h2-size);
     line-height: 1.05;
     color: var(--text-tertiary-color);
     margin-bottom: 24px;
@@ -89,15 +96,14 @@
 }
 
 /* ---------- Imagem Direita ---------- */
-/* Antes: position:absolute + "right" calculado por fórmula de viewport (frágil).
-   Agora: item flex real, com gap cuidando da distância até o texto em QUALQUER largura. */
 
 .hero-hand {
-    position: relative;
-    z-index: 2;
-    flex: 0 1 400px;
-    width: 100%;
-    max-width: 400px;
-    min-width: 240px;
+    position: absolute;
+    top: 57.5%;
+    right: 15%;
+    transform: translateY(-50%);
+    width: 23%;
+    min-width: 360px;
+    max-width: 440px;
     height: auto;
 }
