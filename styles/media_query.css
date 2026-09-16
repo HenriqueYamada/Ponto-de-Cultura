@@ -27,6 +27,12 @@
     .activities {
         padding: 60px 60px;
     }
+
+    /* ---------- Galery ---------- */
+
+    .galery {
+        padding: 70px 60px 90px;
+    }
 }
 
 @media (max-width: 1100px) {
@@ -105,6 +111,22 @@
     .image {
         aspect-ratio: 1 / 1; 
         padding: 20px;
+    }
+
+    /* ---------- Galery ---------- */
+
+    .galery {
+        padding: 60px 40px 80px;
+    }
+
+    .galery .titles-sections {
+        margin-bottom: 36px;
+    }
+
+    .galery__images {
+        grid-auto-columns: minmax(200px, 220px);
+        gap: 20px;
+        scroll-padding-left: 40px;
     }
 }
 
@@ -278,6 +300,28 @@
     .image p {
         font-size: 14px;
     }
+
+    /* ---------- Galery ---------- */
+    .galery {
+        padding: 60px 24px 70px;
+    }
+
+    .galery__images {
+        /* "peek" do próximo card sinaliza que dá pra arrastar */
+        grid-auto-columns: minmax(200px, 68%);
+        gap: 16px;
+        scroll-padding-left: 24px;
+        margin-bottom: 32px;
+    }
+
+    .galery_images_iamge {
+        border-radius: 16px;
+    }
+
+    .galery_images_iamge span {
+        font-size: 13px;
+        padding: 7px 12px;
+    }
 }
 
 @media (max-width: 480px) {
@@ -353,5 +397,20 @@
     .image p {
         font-size: 13px;
         line-height: 1.4;
+    }
+
+    /* ---------- Galery ---------- */
+    .galery {
+        padding: 40px 16px 60px;
+    }
+
+    .galery__images {
+        grid-auto-columns: minmax(180px, 78%);
+        gap: 12px;
+        scroll-padding-left: 16px;
+    }
+
+    .galery_images_iamge {
+        border-radius: 14px;
     }
 }
