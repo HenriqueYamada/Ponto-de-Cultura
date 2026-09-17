@@ -1,0 +1,47 @@
+.cta {
+    background-color: var(--color-tertiary);
+    width: 100%;
+}
+
+.cta-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 180px;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 40px 120px;
+    overflow: hidden;
+}
+
+.cta__content {
+    position: relative;
+    z-index: 2;
+    max-width: 700px;
+    text-align: center;
+}
+
+.cta__content h2 {
+    color: var(--color-secondary);
+    font-size: var(--title-h3-size);
+    font-weight: var(--title-weight);
+    line-height: 1;
+    text-transform: uppercase;
+}
+
+.cta__bird {
+    position: absolute;
+    bottom: -20px;
+    left: 0;
+    width: 190px;
+    height: auto;
+}
+
+.cta__pattern {
+    position: absolute;
+    top: 0;
+    right: 40px;
+    height: 100%;
+    width: auto;
+}

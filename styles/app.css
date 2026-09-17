@@ -6,6 +6,8 @@
 @import "home/stats.css";
 @import "home/activities.css";
 @import "home/galery.css";
+@import "cta.css";
+@import "footer.css";
 @import "media_query.css";
 
 :root {
