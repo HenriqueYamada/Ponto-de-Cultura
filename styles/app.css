@@ -1,27 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;700&family=Inter:wght@400;500;600;700&family=Sofia+Sans+Condensed:wght@100..1000&display=swap');
 
-@import "header.css";
-@import "hero.css";
+@import "home/header.css";
+@import "home/hero.css";
+@import "home/history.css";
+@import "home/stats.css";
+@import "home/activities.css";
+@import "home/galery.css";
+@import "cta.css";
+@import "footer.css";
 @import "media_query.css";
-
-@font-face {
-    font-family: "Sofia Sans Condensed";
-    src: url('https://fonts.gstatic.com/s/sofiasanscondensed/v1/HI_KiYs3Icvp68482N-LdkaId3mTV60v4_gq-w.woff2') format('woff2');
-    font-weight: 100 1000;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: "Inter";
-    src: url('https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_fvQtMwCp50KnMw2boKODKl.woff2') format('woff2');
-    font-display: swap;
-}
-
-@font-face {
-    font-family: "IBM Plex Mono";
-    src: url('https://fonts.gstatic.com/s/ibmplexmono/v19/-F63fjptAgt5VM-kVkqdyU8n1iIq129k.woff2') format('woff2');
-    font-weight: 400 700;
-    font-display: swap;
-}
 
 :root {
     /* Backgrounds */
@@ -33,24 +20,26 @@
     /* Text Colors */
     --text-primary-color: #000000;
     --text-secondary-color: #6C685D;
-    --text-tertiary-color: #FFFFFF;
+    --text-tertiary-color: #FFFFFFB8;
+    --text-quaternary-color: #FFFFFF;
 
     /* Brand/Action Colors */
     --color-primary: #E62429;
-    --color-primary-hover: #b41f24;
+    --color-primary-hover: #8a171b;
     --color-secondary: #021C35;
     --color-tertiary: #FDBF06;
 
-    /* Title Sizes */
+   /* Title Sizes */
     --title-h1-size: 64px;
-    --title-h2-size: 54.04px;
-    --title-h3-size: 43.42px;
+    --title-h2-size: 56px;
+    --title-h3-size: 40px;
     --title-h4-size: 32px;
     --subtitle-size: 24px;
 
+    /* Body Text Sizes */
     --text-body1-size: 16px;
-    --text-body2-size: 20px;
-    --text-body3-size: 24px;
+    --text-body2-size: 18px;
+    --text-body3-size: 20px;
 
     /* Font Weights */
     --title-weight: 900;
@@ -64,10 +53,50 @@
     --title-font: "Sofia Sans Condensed", sans-serif;
     --text-font: "Inter", sans-serif;
     --mono-font: "IBM Plex Mono", monospace;
+
+    /* Shadow */
+    --shadow: 0 20px 40px rgba(0, 0, 255, 0.3);
+
+    /* Layout */
+    --content-max-width: 1360px;
+    --page-gutter: clamp(24px, 5vw, 80px);
+    --section-spacing: clamp(48px, 4vw, 64px);
 }
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+body {
+    background-color: var(--background-primary-color);
+}
+
+main {
+    overflow: clip;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+.content-container {
+    width: 100%;
+    max-width: var(--content-max-width);
+    margin-inline: auto;
+    padding-inline: var(--page-gutter);
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: var(--title-font);
+}
+
+p {
+    color: var(--text-secondary-color);
+    font-family: var(--text-font);
 }

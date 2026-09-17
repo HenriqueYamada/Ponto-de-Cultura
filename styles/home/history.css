@@ -1,0 +1,104 @@
+.history {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    align-items: center;
+    gap: clamp(48px, 7vw, 104px);
+    padding-top: var(--section-spacing);
+    padding-bottom: var(--section-spacing);
+}
+
+/* ---------- Eyebrow ---------- */
+
+.eyebrown {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 18px;
+    color: var(--color-primary);
+    font-family: var(--text-font);
+    font-size: .78rem;
+    font-weight: 600;
+    letter-spacing: .13em;
+    text-transform: uppercase;
+}
+
+.eyebrown::before {
+    content: "";
+    width: 34px;
+    height: 3px;
+    background: currentColor;
+}
+
+/* ---------- History container ---------- */
+
+.history__container {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    width: 100%;
+    max-width: 560px;
+}
+
+.title_content {
+    max-width: 560px;
+    margin-bottom: 12px;
+    color: var(--color-secondary);
+    font-family: var(--title-font);
+    font-size: clamp(40px, 5vw, var(--title-h1-size));
+    font-weight: 700;
+    letter-spacing: -.02em;
+    line-height: .96;
+}
+
+.title_content span {
+    color: var(--color-primary);
+}
+
+.history__content__text {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: var(--text-secondary-color);
+    font-family: var(--text-font);
+    line-height: 1.75;
+}
+
+/* ---------- Button ---------- */
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+    width: max-content;
+    color: var(--color-primary);
+    font-family: var(--text-font);
+    font-size: .82rem;
+    font-weight: 600;
+    letter-spacing: .07em;
+    text-decoration: none;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: color 250ms ease;
+}
+
+.btn:hover {
+    color: var(--color-primary-hover);
+}
+
+.btn::after {
+    content: "→";
+    transition: transform 150ms ease;
+}
+
+.btn:hover::after {
+    transform: translateX(8px);
+}
+
+/* ---------- Image ---------- */
+
+.history__image {
+    justify-self: end;
+    width: 100%;
+    max-width: 580px;
+    height: auto;
+}

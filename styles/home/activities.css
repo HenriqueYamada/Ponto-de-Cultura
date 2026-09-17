@@ -1,0 +1,89 @@
+.activities {
+    background-color: var(--background-primary-color);
+    padding: var(--section-spacing) 0;
+    width: 100%;
+}
+
+.activities-container {
+    width: 100%;
+}
+
+.activities-content {
+    margin-bottom: 48px;
+}
+
+.images {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: clamp(20px, 2.5vw, 32px);
+    margin: 24px 0 32px;
+    width: 100%;
+}
+
+.image {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 20px;
+    overflow: hidden;
+    padding: 24px;
+    width: 100%;
+    aspect-ratio: 280 / 500; 
+    transition: 250ms;
+}
+
+.image:hover {
+    transform: translateY(-4px);
+}
+
+.image::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        to top,
+        rgba(2, 28, 53, .95) 0%,
+        rgba(2, 28, 53, .80) 20%,
+        rgba(2, 28, 53, .45) 40%,
+        rgba(2, 28, 53, .10) 65%,
+        transparent 80%
+    );
+}
+
+.image h3,
+.image p {
+    position: relative;
+    z-index: 1;
+}
+
+.image h3 {
+    color: var(--color-tertiary);
+    font-size: 30px;
+    margin-bottom: 12px;
+}
+
+.image p {
+    color: rgba(255, 255, 255, .80);
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+#teatro {
+    background-image: url(../../assets/photos/instagram-extra-01.jpg);
+}
+
+#cordas {
+    background-image: url(../../assets/photos/instagram-violao.jpg);
+}
+
+#percussa-maracatu {
+    background-image: url(../../assets/photos/instagram-02.jpg);
+}
+
+#musica {
+    background-image: url(../../assets/photos/instagram-07.jpg);
+}
