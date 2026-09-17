@@ -1,12 +1,15 @@
 .galery {
-    padding: 60px 160px;
+    padding-top: var(--section-spacing);
+    padding-bottom: var(--section-spacing);
     background-color: var(--background-primary-color);
-    margin: auto;
-    max-width: 1440px;
 }
 
 .galery .titles-sections {
-    margin-bottom: 48px;
+    margin-bottom: 40px;
+}
+
+.galery .activities-content {
+    margin-bottom: 0;
 }
 
 .galery__images {
@@ -19,7 +22,7 @@
     overscroll-behavior-x: contain;
     scroll-snap-type: x proximity;
     scroll-behavior: smooth;
-    scroll-padding-left: 72px;
+    scroll-padding-left: var(--page-gutter);
 
     padding-bottom: 16px;
     margin-bottom: 40px;

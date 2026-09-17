@@ -1,6 +1,7 @@
 .cta {
     background-color: var(--color-tertiary);
     width: 100%;
+    overflow: hidden;
 }
 
 .cta-container {
@@ -8,10 +9,9 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    min-height: 180px;
-    max-width: 1440px;
-    margin: 0 auto;
-    padding: 40px 120px;
+    height: 200px;
+    padding-top: 32px;
+    padding-bottom: 32px;
     overflow: hidden;
 }
 
@@ -32,16 +32,53 @@
 
 .cta__bird {
     position: absolute;
-    bottom: -20px;
-    left: 0;
-    width: 190px;
-    height: auto;
+    bottom: 0;
+    left: var(--page-gutter);
+    width: auto;
+    height: 88%;
+    max-width: 22%;
+    object-fit: contain;
+    object-position: left bottom;
 }
 
 .cta__pattern {
     position: absolute;
     top: 0;
-    right: 40px;
+    right: var(--page-gutter);
     height: 100%;
-    width: auto;
+    width: min(240px, 24%);
+    object-fit: contain;
+    object-position: right center;
+}
+
+@media (max-width: 1024px) {
+    .cta__bird {
+        height: 76%;
+        max-width: 20%;
+    }
+
+    .cta__pattern {
+        width: min(200px, 22%);
+    }
+}
+
+@media (max-width: 768px) {
+    .cta-container {
+        height: 180px;
+    }
+
+    .cta__content h2 {
+        font-size: var(--title-h4-size);
+    }
+
+    .cta__bird,
+    .cta__pattern {
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .cta__content h2 {
+        font-size: 28px;
+    }
 }

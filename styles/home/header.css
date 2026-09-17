@@ -21,9 +21,9 @@ header nav {
     gap: 40px;
     color: white;
     margin: auto;
-    padding: 16px 24px;
+    padding: 16px var(--page-gutter);
     width: 100%;
-    max-width: 1024px;
+    max-width: var(--content-max-width);
 }
 
 .header__logo {

@@ -1,9 +1,10 @@
 .activities {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     background-color: var(--background-primary-color);
-    padding: 60px 160px;
+    padding: var(--section-spacing) 0;
+    width: 100%;
+}
+
+.activities-container {
     width: 100%;
 }
 
@@ -14,8 +15,8 @@
 .images {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 40px;
-    margin: 24px 0;
+    gap: clamp(20px, 2.5vw, 32px);
+    margin: 24px 0 32px;
     width: 100%;
 }
 
@@ -36,7 +37,7 @@
 }
 
 .image:hover {
-    scale: 1.05;
+    transform: translateY(-4px);
 }
 
 .image::before {

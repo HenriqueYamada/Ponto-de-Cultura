@@ -4,12 +4,11 @@
 }
 
 .stats-container {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1.25fr repeat(3, 1fr);
     align-items: center;
-    gap: 48px;
-    margin: auto;
-    padding: 48px 120px;
-    max-width: 1280px;
+    padding-top: 48px;
+    padding-bottom: 48px;
 }
 
 .title,
@@ -37,7 +36,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 10px 26px;
+    padding: 10px clamp(20px, 3vw, 36px);
     border-left: 1px solid rgba(255, 255, 255, 0.25);
     height: 100px;
 }
