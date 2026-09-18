@@ -1,11 +1,10 @@
 .galery {
-    padding-top: var(--section-spacing);
     padding-bottom: var(--section-spacing);
     background-color: var(--background-primary-color);
 }
 
 .galery .titles-sections {
-    margin-bottom: 40px;
+    margin-bottom: 32px;
 }
 
 .galery .activities-content {
@@ -19,34 +18,18 @@
     gap: 24px;
 
     overflow-x: auto;
-    overscroll-behavior-x: contain;
+    /* overscroll-behavior-x: contain;
     scroll-snap-type: x proximity;
     scroll-behavior: smooth;
-    scroll-padding-left: var(--page-gutter);
+    scroll-padding-left: var(--page-gutter); */
 
-    padding-bottom: 16px;
-    margin-bottom: 40px;
+    margin-bottom: 32px;
 }
 
-/* Scrollbar nativa (fina, com a cor de destaque) até a barra customizada
-   com setas (visível no print) entrar via JS futuramente. */
 .galery__images {
     scrollbar-width: thin;
     scrollbar-color: var(--color-primary) rgba(2, 28, 53, 0.1);
-}
-
-.galery__images::-webkit-scrollbar {
-    height: 6px;
-}
-
-.galery__images::-webkit-scrollbar-track {
-    background: rgba(2, 28, 53, 0.1);
-    border-radius: 100px;
-}
-
-.galery__images::-webkit-scrollbar-thumb {
-    background: var(--color-primary);
-    border-radius: 100px;
+    padding-bottom: 16px;
 }
 
 /* ---------- Card ---------- */
@@ -60,21 +43,28 @@
     background-color: var(--background-secondary-color);
     background-size: cover;
     background-position: center;
-
-    scroll-snap-align: start;
 }
 
-/* Se/quando as imagens virarem <img> dentro do card, isso já cobre: */
-.galery_images_image img {
-    position: absolute;
-    inset: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    z-index: 0;
+#encontro {
+    background-image: url(../../assets/photos/encontro-cultura-viva-03.jpg);
 }
 
-/* Gradiente para o texto ficar legível sobre a foto */
+#vivencia {
+    background-image: url(../../assets/photos/instagram-violao.jpg);
+}
+
+#oficina-acao {
+    background-image: url(../../assets/photos/instagram-09.jpg);
+}
+
+#comunidade {
+    background-image: url(../../assets/photos/instagram-02.jpg);
+}
+
+#oficina-cordas {
+    background-image: url(../../assets/photos/instagram-extra-03.jpg);
+}
+
 .galery_images_image::after {
     content: "";
     position: absolute;
@@ -100,14 +90,11 @@
 
     background-color: rgba(2, 28, 53, 0.55);
     backdrop-filter: blur(6px);
-    -webkit-backdrop-filter: blur(6px);
 
     color: var(--text-quaternary-color);
     font-family: var(--text-font);
     font-weight: var(--text-body1-weight);
     font-size: 14px;
     line-height: 1.2;
-    white-space: nowrap;
     overflow: hidden;
-    text-overflow: ellipsis;
 }

@@ -1,0 +1,13 @@
+.hero-container-pages{
+    text-align: center;
+    padding-top: 104px;
+}
+
+.hero-content {
+    justify-content: center;
+    position: relative;
+    z-index: 2;
+    margin: auto;
+    width: 100%;
+    max-width: 520px;
+}
