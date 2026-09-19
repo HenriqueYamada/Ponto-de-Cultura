@@ -94,7 +94,7 @@
 }
 
 .about-video__link:hover img {
-    transform: scale(1.03);
+    transform: scale(1.02);
 }
 
 .about-video__link:hover::after {
@@ -106,7 +106,6 @@
 }
 
 @media (max-width: 1024px) {
-
     .about-video {
         padding: 100px 40px;
     }
