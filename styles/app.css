@@ -17,6 +17,7 @@
 /* About */
 
 @import url(about/hero.css);
+@import url(about/about.css);
 
 /* Media Query */
 @import "media_query.css";

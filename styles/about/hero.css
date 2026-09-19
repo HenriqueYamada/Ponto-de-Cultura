@@ -9,5 +9,18 @@
     z-index: 2;
     margin: auto;
     width: 100%;
-    max-width: 520px;
+    max-width: 600px;
+}
+
+.hero-title {
+    margin: 0 auto 20px auto;
+    font-size: 3.5em;
+    font-weight: 700;
+}
+
+@media (max-width: 768px) {
+    .hero-title {
+        width: 100%;
+        font-size: 2.5em;
+    }
 }
