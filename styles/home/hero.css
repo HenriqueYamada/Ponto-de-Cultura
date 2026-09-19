@@ -7,12 +7,11 @@
 
 .hero-container {
     display: grid;
-    grid-template-columns: minmax(160px, .65fr) minmax(340px, 1fr) minmax(320px, 1fr);
+    grid-template-columns: minmax(200px, .65fr) minmax(340px, 1fr) minmax(320px, 1fr);
     align-items: center;
     gap: clamp(28px, 4vw, 64px);
     min-height: 540px;
-    padding-top: 104px;
-    padding-bottom: 56px;
+    padding-top: 84px;
 }
 
 /* ---------- Imagem esquerda ---------- */
@@ -20,7 +19,7 @@
 .hero-bird {
     align-self: end;
     justify-self: start;
-    width: clamp(175px, 16vw, 230px);
+    width: clamp(200px, 16vw, 230px);
     height: auto;
     margin-bottom: -112px;
     pointer-events: none;

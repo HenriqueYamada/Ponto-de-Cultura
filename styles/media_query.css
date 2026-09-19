@@ -1,4 +1,35 @@
 @media (max-width: 1024px) {
+    /* ---------- Hero ---------- */
+
+    .hero-container {
+        grid-template-columns: minmax(0, 1fr) minmax(280px, .85fr);
+        gap: 32px;
+    }
+    
+    .hero-bird {
+        display: none;
+    }
+
+    .hero-hand {
+        width: min(100%, 340px);
+    }
+
+    /* ---------- History ---------- */
+
+    .history {
+        grid-template-columns: 1fr;
+        gap: 56px;
+    }
+
+    .history__container {
+        max-width: 680px;
+    }
+
+    .history__image {
+        justify-self: center;
+        max-width: 720px;
+    }
+
     /* ---------- Stats ---------- */
 
     .stats-container {
@@ -26,37 +57,6 @@
 }
 
 @media (max-width: 850px) {
-    /* ---------- Hero ---------- */
-
-    .hero-container {
-        grid-template-columns: minmax(0, 1fr) minmax(280px, .85fr);
-        gap: 32px;
-    }
-
-    .hero-bird {
-        display: none;
-    }
-
-    .hero-hand {
-        width: min(100%, 340px);
-    }
-
-    /* ---------- History ---------- */
-
-    .history {
-        grid-template-columns: 1fr;
-        gap: 56px;
-    }
-
-    .history__container {
-        max-width: 680px;
-    }
-
-    .history__image {
-        justify-self: center;
-        max-width: 720px;
-    }
-
     /* ---------- Stats ---------- */
 
     .stats-container {

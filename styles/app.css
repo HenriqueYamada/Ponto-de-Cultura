@@ -1,13 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;700&family=Inter:wght@400;500;600;700&family=Sofia+Sans+Condensed:wght@100..1000&display=swap');
 
-@import "home/header.css";
+/* General */
+
+@import "header.css";
+@import "cta.css";
+@import "footer.css";
+
+/* Home */
+
 @import "home/hero.css";
 @import "home/history.css";
 @import "home/stats.css";
 @import "home/activities.css";
 @import "home/galery.css";
-@import "cta.css";
-@import "footer.css";
+
+/* About */
+
+@import url(about/hero.css);
+
+/* Media Query */
 @import "media_query.css";
 
 :root {

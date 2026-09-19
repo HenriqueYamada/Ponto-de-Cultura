@@ -82,6 +82,11 @@ footer {
     width: 22px;
     height: 22px;
     object-fit: contain;
+    transition: 200ms;
+}
+
+.footer-socials img:hover {
+    scale: 1.25;
 }
 
 .footer-bottom {
@@ -91,6 +96,7 @@ footer {
 
 .footer-bottom p {
     color: var(--text-tertiary-color);
+    text-align: center;
     font-size: 13px;
 }
 
@@ -139,5 +145,10 @@ footer {
     .footer-partners img {
         max-width: 75px;
         max-height: 38px;
+        transition: 200ms;
+    }
+
+    .footer-partners img:hover {
+        scale: 1.1;
     }
 }
