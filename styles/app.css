@@ -18,6 +18,21 @@
 
 @import url(about/hero.css);
 @import url(about/about.css);
+@import url(about/timeline.css);
+@import url(about/purpose.css);
+@import url(about/team.css);
+
+/* Activities */
+
+@import url(activities/workshops.css);
+@import url(activities/journey.css);
+@import url(activities/actions.css);
+@import url(activities/faq.css);
+
+/* Contact */
+
+@import url(contact/direct.css);
+@import url(contact/location.css);
 
 /* Media Query */
 @import "media_query.css";

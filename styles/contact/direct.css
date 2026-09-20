@@ -1,0 +1,167 @@
+/* ==================================================
+   CONTATO — CANAIS DIRETOS
+   ================================================== */
+
+.contact-direct {
+    padding-top: clamp(72px, 8vw, 112px);
+    padding-bottom: clamp(28px, 3vw, 44px);
+    background-color: var(--background-primary-color);
+}
+
+.contact-direct-container.content-container {
+    display: grid;
+    grid-template-columns: minmax(0, .92fr) minmax(0, 1.08fr);
+    align-items: stretch;
+    max-width: 1200px;
+    min-height: 506px;
+    padding-inline: 0;
+    overflow: hidden;
+    border-radius: 28px;
+    background-color: rgba(255, 255, 255, .48);
+}
+
+.contact-direct-intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: clamp(40px, 6vw, 72px);
+    background-color: var(--color-tertiary);
+}
+
+.contact-direct-intro h2 {
+    max-width: 500px;
+    margin-bottom: 22px;
+    color: var(--color-secondary);
+    font-size: clamp(46px, 5vw, 64px);
+    font-weight: 700;
+    line-height: .98;
+}
+
+.contact-direct-intro p {
+    max-width: 470px;
+    color: rgba(2, 28, 53, .78);
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+.contact-channels {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 14px;
+    padding: clamp(32px, 5vw, 56px);
+}
+
+.contact-channel {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    min-height: 104px;
+    padding: 20px;
+    border: 1px solid rgba(2, 28, 53, .18);
+    border-radius: 18px;
+    color: var(--color-secondary);
+    font-family: var(--text-font);
+    text-decoration: none;
+    transition: border-color 200ms ease, transform 200ms ease, background-color 200ms ease;
+}
+
+a.contact-channel:hover {
+    border-color: var(--color-primary);
+    background-color: rgba(255, 255, 255, .58);
+    transform: translateY(-2px);
+}
+
+.contact-channel__icon {
+    display: grid;
+    flex: 0 0 58px;
+    place-items: center;
+    width: 58px;
+    height: 58px;
+    border-radius: 50%;
+    background-color: rgba(253, 191, 6, .26);
+}
+
+.contact-channel__icon img {
+    width: 25px;
+    height: 25px;
+    object-fit: contain;
+    filter: brightness(0) saturate(100%);
+}
+
+.contact-channel__content {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.contact-channel__content strong {
+    font-family: var(--title-font);
+    font-size: 21px;
+    line-height: 1;
+}
+
+.contact-channel__content small {
+    color: var(--text-secondary-color);
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+.contact-channel__arrow {
+    color: var(--color-primary);
+    font-size: 22px;
+    transition: transform 200ms ease;
+}
+
+a.contact-channel:hover .contact-channel__arrow {
+    transform: translateX(5px);
+}
+
+.contact-channel:focus-visible {
+    outline: 3px solid var(--color-primary);
+    outline-offset: 3px;
+}
+
+@media (max-width: 900px) {
+    .contact-direct {
+        padding-inline: var(--page-gutter);
+    }
+
+    .contact-direct-container.content-container {
+        grid-template-columns: 1fr;
+        min-height: 0;
+    }
+}
+
+@media (max-width: 600px) {
+    .contact-direct {
+        padding-top: 56px;
+        padding-bottom: 20px;
+    }
+
+    .contact-direct-container.content-container {
+        border-radius: 20px;
+    }
+
+    .contact-direct-intro,
+    .contact-channels {
+        padding: 30px 24px;
+    }
+
+    .contact-direct-intro h2 {
+        font-size: 40px;
+    }
+
+    .contact-channel {
+        min-height: 92px;
+        padding: 16px;
+    }
+
+    .contact-channel__icon {
+        flex-basis: 50px;
+        width: 50px;
+        height: 50px;
+    }
+
+}

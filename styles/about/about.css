@@ -1,7 +1,7 @@
 .about-video {
     background-color: var(--background-primary-color);
     width: 100%;
-    padding: 120px 60px;
+    padding: 120px 60px 64px;
 }
 
 .about-video-container {
@@ -107,7 +107,7 @@
 
 @media (max-width: 1024px) {
     .about-video {
-        padding: 100px 40px;
+        padding: 100px 40px 56px;
     }
 
     .about-video-container {
@@ -126,7 +126,7 @@
 @media (max-width: 850px) {
 
     .about-video {
-        padding: 80px 40px;
+        padding: 80px 40px 48px;
     }
 
     .about-video-container {
@@ -150,7 +150,7 @@
 @media (max-width: 480px) {
 
     .about-video {
-        padding: 60px 24px;
+        padding: 60px 24px 40px;
     }
 
     .about-video-container {

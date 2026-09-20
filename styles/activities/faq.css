@@ -1,0 +1,134 @@
+/* ==================================================
+   ATIVIDADES — PERGUNTAS FREQUENTES
+   ================================================== */
+
+.activities-faq {
+    width: 100%;
+    padding-block: clamp(72px, 8vw, 112px);
+    background-color: var(--background-primary-color);
+}
+
+.activities-faq-container {
+    max-width: 1050px;
+}
+
+.activities-faq-heading {
+    max-width: 720px;
+    margin-bottom: 42px;
+}
+
+.activities-faq-heading .eyebrown {
+    margin-bottom: 24px;
+}
+
+.activities-faq-heading .title_content {
+    margin-bottom: 18px;
+}
+
+.activities-faq-heading p {
+    max-width: 610px;
+    font-size: var(--text-body1-size);
+    line-height: 1.7;
+}
+
+.activities-faq-list {
+    border-top: 1px solid rgba(2, 28, 53, .2);
+}
+
+.activities-faq-list details {
+    border-bottom: 1px solid rgba(2, 28, 53, .2);
+}
+
+.activities-faq-list summary {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    padding-block: 24px;
+    color: var(--color-secondary);
+    font-family: var(--title-font);
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.15;
+    cursor: pointer;
+    list-style: none;
+}
+
+.activities-faq-list summary::-webkit-details-marker {
+    display: none;
+}
+
+.activities-faq-list summary::after {
+    content: '+';
+    flex: 0 0 auto;
+    color: var(--color-primary);
+    font-family: var(--text-font);
+    font-size: 28px;
+    font-weight: 400;
+}
+
+.activities-faq-list details[open] summary::after {
+    content: '−';
+}
+
+.activities-faq-list details p {
+    max-width: 720px;
+    padding: 0 48px 24px 0;
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+.activities-faq-link {
+    display: inline-block;
+    margin-top: 36px;
+    padding: 14px 20px;
+    border-radius: 8px;
+    background-color: var(--color-primary);
+    color: #fff;
+    font-family: var(--text-font);
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: .05em;
+    text-decoration: none;
+    transition: background-color 200ms ease, transform 200ms ease;
+}
+
+.activities-faq-link:hover {
+    transform: translateY(-2px);
+    background-color: var(--color-primary-hover);
+}
+
+.activities-faq-list summary:focus-visible,
+.activities-faq-link:focus-visible {
+    outline: 3px solid var(--color-tertiary);
+    outline-offset: 4px;
+}
+
+@media (max-width: 650px) {
+    .activities-faq {
+        padding-block: 64px;
+    }
+
+    .activities-faq-heading {
+        margin-bottom: 32px;
+    }
+
+    .activities-faq-list summary {
+        padding-block: 20px;
+        font-size: 21px;
+    }
+
+    .activities-faq-list details p {
+        padding-right: 28px;
+    }
+}
+
+@media (max-width: 480px) {
+    .activities-faq {
+        padding-block: 56px;
+    }
+
+    .activities-faq-list summary {
+        font-size: 20px;
+    }
+}
