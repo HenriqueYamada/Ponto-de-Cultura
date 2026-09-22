@@ -1,6 +1,5 @@
 .hero--internal {
     isolation: isolate;
-    border-bottom: 3px solid rgba(253, 191, 6, .75);
     background-color: var(--background-secondary-color);
 }
 
