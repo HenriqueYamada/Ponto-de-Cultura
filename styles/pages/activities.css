@@ -1,0 +1,480 @@
+/* ---------------------- Workshops ---------------------- */
+
+.workshops {
+    width: 100%;
+    padding-block: clamp(72px, 8vw, 112px);
+    background-color: var(--background-primary-color);
+}
+
+.workshops-container {
+    max-width: 1200px;
+}
+
+.workshops-heading {
+    max-width: 760px;
+    margin-bottom: 44px;
+}
+
+.workshops-heading .eyebrown {
+    margin-bottom: 24px;
+}
+
+.workshops-heading .title_content {
+    margin-bottom: 18px;
+}
+
+.workshops-heading p {
+    max-width: 650px;
+    font-size: var(--text-body1-size);
+    line-height: 1.7;
+}
+
+.workshops-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 20px;
+}
+
+.workshop-card {
+    overflow: hidden;
+    border: 1px solid rgba(2, 28, 53, .12);
+    border-radius: 18px;
+    background-color: rgba(255, 255, 255, .42);
+}
+
+.workshop-card img {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+}
+
+.workshop-card__content {
+    padding: 24px;
+}
+
+.workshop-card__content > span {
+    display: block;
+    margin-bottom: 10px;
+    color: var(--color-primary);
+    font-family: var(--mono-font);
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: .08em;
+}
+
+.workshop-card__content h3 {
+    margin-bottom: 12px;
+    color: var(--color-secondary);
+    font-size: 30px;
+    line-height: 1.05;
+}
+
+.workshop-card__content p {
+    font-size: 14px;
+    line-height: 1.65;
+}
+
+/* ---------------------- Journey ---------------------- */
+
+.activity-journey {
+    width: 100%;
+    padding-block: clamp(72px, 8vw, 112px);
+    background-color: #e9dec6;
+}
+
+.activity-journey-container {
+    max-width: 1200px;
+}
+
+.activity-journey-heading {
+    max-width: 760px;
+    margin-bottom: 44px;
+}
+
+.activity-journey-heading .eyebrown {
+    margin-bottom: 24px;
+}
+
+.activity-journey-heading .title_content {
+    margin-bottom: 18px;
+}
+
+.activity-journey-heading p {
+    max-width: 620px;
+    font-size: var(--text-body1-size);
+    line-height: 1.7;
+}
+
+.activity-journey-list {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    list-style: none;
+}
+
+.activity-journey-step {
+    position: relative;
+    padding: 28px 24px 8px;
+    border-top: 2px solid rgba(2, 28, 53, .2);
+}
+
+.activity-journey-step::before {
+    content: '';
+    position: absolute;
+    top: -7px;
+    left: 24px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: var(--color-primary);
+}
+
+.activity-journey-step > span {
+    display: block;
+    margin-bottom: 20px;
+    color: var(--color-primary);
+    font-family: var(--mono-font);
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.activity-journey-step h3 {
+    margin-bottom: 12px;
+    color: var(--color-secondary);
+    font-size: 25px;
+    line-height: 1.08;
+}
+
+.activity-journey-step p {
+    font-size: 14px;
+    line-height: 1.65;
+}
+
+/* ---------------------- Actions ---------------------- */
+
+.cultural-actions {
+    width: 100%;
+    padding-block: clamp(80px, 8vw, 120px);
+    background-color: var(--background-secondary-color);
+}
+
+.cultural-actions-container {
+    max-width: 1200px;
+}
+
+.cultural-actions .eyebrown {
+    color: var(--color-primary);
+}
+
+.cultural-actions-heading {
+    max-width: 760px;
+    margin-bottom: 48px;
+}
+
+.cultural-actions-heading .title_content {
+    max-width: 760px;
+    margin-top: 24px;
+    margin-bottom: 20px;
+    color: var(--text-quaternary-color);
+}
+
+.cultural-actions-heading p {
+    max-width: 620px;
+    color: var(--text-tertiary-color);
+    font-size: var(--text-body1-size);
+    line-height: 1.65;
+}
+
+.cultural-actions-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 14px;
+}
+
+.cultural-action {
+    min-height: 230px;
+    padding: 28px;
+    border: 1px solid rgba(255, 255, 255, .16);
+    border-radius: 18px;
+    background-color: rgba(255, 255, 255, .055);
+}
+
+.cultural-action > span {
+    display: block;
+    margin-bottom: 34px;
+    color: var(--color-tertiary);
+    font-family: var(--mono-font);
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.cultural-action h3 {
+    margin-bottom: 14px;
+    color: var(--color-tertiary);
+    font-size: 24px;
+    line-height: 1.05;
+}
+
+.cultural-action p {
+    color: var(--text-tertiary-color);
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+/* ---------------------- FAQ ---------------------- */
+
+.activities-faq {
+    width: 100%;
+    padding-block: clamp(72px, 8vw, 112px);
+    background-color: var(--background-primary-color);
+}
+
+.activities-faq-container {
+    max-width: 1050px;
+}
+
+.activities-faq-heading {
+    max-width: 720px;
+    margin-bottom: 42px;
+}
+
+.activities-faq-heading .eyebrown {
+    margin-bottom: 24px;
+}
+
+.activities-faq-heading .title_content {
+    margin-bottom: 18px;
+}
+
+.activities-faq-heading p {
+    max-width: 610px;
+    font-size: var(--text-body1-size);
+    line-height: 1.7;
+}
+
+.activities-faq-list {
+    border-top: 1px solid rgba(2, 28, 53, .2);
+}
+
+.activities-faq-list details {
+    border-bottom: 1px solid rgba(2, 28, 53, .2);
+}
+
+.activities-faq-list summary {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    padding-block: 24px;
+    color: var(--color-secondary);
+    font-family: var(--title-font);
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.15;
+    cursor: pointer;
+    list-style: none;
+}
+
+.activities-faq-list summary::-webkit-details-marker {
+    display: none;
+}
+
+.activities-faq-list summary::after {
+    content: '+';
+    flex: 0 0 auto;
+    color: var(--color-primary);
+    font-family: var(--text-font);
+    font-size: 28px;
+    font-weight: 400;
+}
+
+.activities-faq-list details[open] summary::after {
+    content: '−';
+}
+
+.activities-faq-list details p {
+    max-width: 720px;
+    padding: 0 48px 24px 0;
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+.activities-faq-link {
+    display: inline-block;
+    margin-top: 36px;
+    padding: 14px 20px;
+    border-radius: 8px;
+    background-color: var(--color-primary);
+    color: #fff;
+    font-family: var(--text-font);
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: .05em;
+    text-decoration: none;
+    transition: background-color 200ms ease, transform 200ms ease;
+}
+
+.activities-faq-link:hover {
+    transform: translateY(-2px);
+    background-color: var(--color-primary-hover);
+}
+
+.activities-faq-list summary:focus-visible,
+.activities-faq-link:focus-visible {
+    outline: 3px solid var(--color-tertiary);
+    outline-offset: 4px;
+}
+
+/* ---------------------- Media Queries ---------------------- */
+
+@media (max-width: 1000px) {
+    /* ---------- Actions ---------- */
+    .cultural-actions-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 900px) {
+    /* ---------- Workshop ---------- */
+    .workshops-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    /* ---------- Journey ---------- */
+    .activity-journey-list {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        row-gap: 32px;
+    }
+}
+
+@media (max-width: 700px) {
+    /* ---------- Actions ---------- */
+    .cultural-actions {
+        padding-block: 64px;
+    }
+
+    .cultural-actions-heading {
+        margin-bottom: 36px;
+    }
+
+    .cultural-actions-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .cultural-action {
+        min-height: 0;
+    }
+
+    .cultural-action > span {
+        margin-bottom: 24px;
+    }
+}
+
+@media (max-width: 650px) {
+    /* ---------- Workshop ---------- */
+    .workshops {
+        padding-block: 64px;
+    }
+
+    .workshops-heading {
+        margin-bottom: 32px;
+    }
+
+    .workshops-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    /* ---------- Journey ---------- */
+    .activity-journey {
+        padding-block: 64px;
+    }
+
+    .activity-journey-heading {
+        margin-bottom: 36px;
+    }
+
+    .activity-journey-list {
+        grid-template-columns: 1fr;
+        gap: 26px;
+    }
+
+    .activity-journey-step {
+        padding: 24px 0 0 34px;
+        border-top: 0;
+        border-left: 2px solid rgba(2, 28, 53, .2);
+    }
+
+    .activity-journey-step::before {
+        top: 4px;
+        left: -7px;
+    }
+    
+    /* ---------- FAQ ---------- */
+    .activities-faq {
+        padding-block: 64px;
+    }
+
+    .activities-faq-heading {
+        margin-bottom: 32px;
+    }
+
+    .activities-faq-list summary {
+        padding-block: 20px;
+        font-size: 21px;
+    }
+
+    .activities-faq-list details p {
+        padding-right: 28px;
+    }
+}
+
+@media (max-width: 480px) {
+    /* ---------- Workshop ---------- */
+    .workshops {
+        padding-block: 56px;
+    }
+
+    .workshop-card {
+        border-radius: 16px;
+    }
+
+    .workshop-card__content {
+        padding: 22px;
+    }
+
+    .workshop-card__content h3 {
+        font-size: 27px;
+    }
+    
+    /* ---------- Journey ---------- */
+    .activity-journey {
+        padding-block: 56px;
+    }
+
+    .activity-journey-step h3 {
+        font-size: 23px;
+    }
+    
+    /* ---------- Actions ---------- */
+    .cultural-actions {
+        padding-block: 56px;
+    }
+
+    .cultural-action {
+        padding: 24px;
+        border-radius: 16px;
+    }
+
+    .cultural-action h3 {
+        font-size: 22px;
+    }
+
+    /* ---------- FAQ ---------- */
+    .activities-faq {
+        padding-block: 56px;
+    }
+
+    .activities-faq-list summary {
+        font-size: 20px;
+    }
+}

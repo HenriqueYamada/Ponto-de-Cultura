@@ -1,37 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;700&family=Inter:wght@400;500;600;700&family=Sofia+Sans+Condensed:wght@100..1000&display=swap');
 
 /* General */
-
-@import "header.css";
-@import "cta.css";
-@import "footer.css";
-
-/* About */
-
-@import url(about/hero.css);
-@import url(about/about.css);
-@import url(about/timeline.css);
-@import url(about/purpose.css);
-@import url(about/team.css);
-
-/* Activities */
-
-@import url(activities/workshops.css);
-@import url(activities/journey.css);
-@import url(activities/actions.css);
-@import url(activities/faq.css);
-
-/* Contact */
-
-@import url(contact/direct.css);
-@import url(contact/location.css);
-
-/* Media Query */
-@import "media_query.css";
+@import "general.css";
 
 /* Pages */
-@import url(pages/about.css);
-@import url(pages/about.css);
+@import "pages/about.css";
+@import "pages/home.css";
+@import "pages/activities.css";
+@import "pages/contact.css";
 
 :root {
     /* Backgrounds */
