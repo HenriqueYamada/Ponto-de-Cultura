@@ -6,14 +6,6 @@
 @import "cta.css";
 @import "footer.css";
 
-/* Home */
-
-@import "home/hero.css";
-@import "home/history.css";
-@import "home/stats.css";
-@import "home/activities.css";
-@import "home/galery.css";
-
 /* About */
 
 @import url(about/hero.css);
@@ -36,6 +28,10 @@
 
 /* Media Query */
 @import "media_query.css";
+
+/* Pages */
+@import url(pages/about.css);
+@import url(pages/about.css);
 
 :root {
     /* Backgrounds */
