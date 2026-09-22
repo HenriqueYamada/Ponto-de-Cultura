@@ -400,7 +400,6 @@
     background-color: var(--background-primary-color);
 }
 
-/* Reutiliza .content-container, definido em app.css. */
 .team-container {
     max-width: 1200px;
 }
@@ -420,8 +419,6 @@
     font-size: var(--text-body1-size);
     line-height: 1.6;
 }
-
-/* Destaque da presidência */
 
 .team-lead {
     display: grid;
@@ -469,8 +466,6 @@
     font-size: var(--text-body1-size);
     line-height: 1.6;
 }
-
-/* Diretoria e conselho */
 
 .team-group + .team-group {
     margin-top: 36px;
@@ -672,6 +667,27 @@
     }
 }
 
+@media (max-width: 768px) {
+    /* ---------- Team ---------- */
+
+    .team-lead {
+        grid-template-columns: 1fr;
+        min-height: 0;
+    }
+
+    .team-lead > img {
+        display: block;
+        width: 100%;
+        height: clamp(210px, 52vw, 330px);
+        min-height: 0;
+        object-fit: cover;
+    }
+
+    .team-lead__content {
+        padding: 32px;
+    }
+}
+
 @media (max-width: 600px) {
     /* ---------- Timeline ---------- */
 
@@ -820,5 +836,9 @@
     .team-member {
         min-height: 0;
         padding: 18px;
+    }
+
+    .team-council {
+        grid-template-columns: 1fr;
     }
 }

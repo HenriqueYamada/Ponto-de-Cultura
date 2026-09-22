@@ -1,8 +1,7 @@
 /* ---------------------- Direct ---------------------- */
 
 .contact-direct {
-    padding-top: clamp(72px, 8vw, 112px);
-    padding-bottom: clamp(28px, 3vw, 44px);
+    padding: clamp(72px, 8vw, 112px) 48px clamp(28px, 3vw, 44px);
     background-color: var(--background-primary-color);
 }
 
@@ -124,8 +123,7 @@ a.contact-channel:hover .contact-channel__arrow {
 /* ---------------------- Location ---------------------- */
 
 .contact-location {
-    padding-top: clamp(28px, 3vw, 44px);
-    padding-bottom: clamp(72px, 8vw, 112px);
+    padding: clamp(72px, 8vw, 112px) 48px clamp(28px, 3vw, 44px);
     background-color: var(--background-primary-color);
 }
 
