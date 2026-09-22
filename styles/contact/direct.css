@@ -124,14 +124,22 @@ a.contact-channel:hover .contact-channel__arrow {
 }
 
 @media (max-width: 900px) {
-    .contact-direct {
-        padding-inline: var(--page-gutter);
-    }
+  .contact-direct {
+    padding-inline: var(--page-gutter);
+  }
 
-    .contact-direct-container.content-container {
-        grid-template-columns: 1fr;
-        min-height: 0;
-    }
+  .contact-direct-container.content-container {
+    grid-template-columns: minmax(0, 1fr);
+    min-height: 0;
+  }
+
+  .contact-channel__content {
+    min-width: 0;
+  }
+
+  .contact-channel__content small {
+    overflow-wrap: anywhere;
+  }
 }
 
 @media (max-width: 600px) {

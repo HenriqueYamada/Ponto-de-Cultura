@@ -2,7 +2,7 @@ header {
     border-bottom: 1px solid rgba(255, 255, 255, .10);
     backdrop-filter: blur(20px) saturate(150%);
     -webkit-backdrop-filter: blur(20px) saturate(150%);
-    background-color: rgba(2, 28, 53, .68);
+    background-color: rgba(2, 28, 53, 0.795);
     width: 100%;
     position: fixed;
     top: 0;
